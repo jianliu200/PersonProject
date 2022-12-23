@@ -1,0 +1,21 @@
+.header{
+    color:white;
+    text-align: center;
+}
+
+ .album{
+    color:white;
+ }
+
+ .track{
+    color:white;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+ }
+
+.form{
+    margin-right:auto;
+    margin-left:auto;
+
+}

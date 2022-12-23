@@ -1,8 +1,8 @@
 import React from "react"
 import {Outlet,Link,Routes, Route} from "react-router-dom"
 import FindArtist from "./theme/artist"
-import Lofi from "./theme/lofi"
-import Party from "./theme/party"
+import Album from "./theme/album"
+import User from "./theme/user"
 import Rap from "./theme/rap"
 import Home from "./home"
 import "./css/navbar.css"
@@ -20,7 +20,7 @@ return(
             <Link to="/artist">Artist</Link>
           </li>
           <li>
-            <Link to="/lofi">Lofi</Link>
+            <Link to="/album">Album</Link>
           </li>
           <li>
             <Link to="/party">Party</Link>
@@ -35,8 +35,8 @@ return(
     <Routes>
         <Route exact path ="/home" element={<Home/>}></Route>
         <Route exact path ="/artist" element={<FindArtist/>}></Route>
-        <Route exact path ="/lofi" element={<Lofi/>}></Route>
-        <Route exact path ="/party" element={<Party/>}></Route>
+        <Route exact path ="/album" element={<Album/>}></Route>
+        <Route exact path ="/user" element={<User/>}></Route>
         <Route exact path ="/rap" element={<Rap/>}></Route>
     </Routes>
     <div>Howdy</div></>

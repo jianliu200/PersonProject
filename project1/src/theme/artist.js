@@ -9,35 +9,6 @@ function FindArtist(){
     const [album,setAlbum] = useState([])
     const [id,setId] = useState("")
 
-    // const searchArtists = async (e) => {
-    //     console.log("it made it to search artist")
-    //     e.preventDefault()
-    //     const {data} = await axios.get("https://api.spotify.com/v1/search", {
-    //         headers: {
-    //             Authorization: `Bearer ${token}`
-    //         },
-    //         params: {
-    //             q: searchKey,
-    //             type: "artist"
-    //         }
-    //     })
-    //     console.log(data.artists.items[0].id)
-    //     setId(data.artists.items[0].id)
-    //     setArtists(data.artists.items) 
-    //     searchAlbum();       
-    // }
-    // const searchAlbum = async() =>{
-    //     console.log("Made it into the search Album")
-    //     console.log(token)
-    //     console.log(id)
-    //     const {data} = await axios.get(`https://api.spotify.com/v1/artists/${id}/albums`, {
-    //         headers: {
-    //             Authorization: `Bearer ${token}`
-    //         },
-    //     })
-    //     console.log("Did this have any data",data)
-    // }
-
     const searchArtists = async (e) => {
         console.log("it made it to search artist")
         e.preventDefault()
@@ -118,10 +89,11 @@ function FindArtist(){
     }
     return(
         <>
-        <form onSubmit={searchArtists}>
+        <h1 class="begin">Find information on your favorite artist</h1>
+        <center><form onSubmit={searchArtists}>
             <input type="text" onChange={e => setSearchKey(e.target.value)}/>
             <button type={"submit"}>Search</button>
-        </form>
+        </form></center>
 
         {renderArtists()}
         {renderAlbum()}
