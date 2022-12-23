@@ -22,7 +22,8 @@ function App() {
 
   },[])
   const CLIENT_ID = '76660fc079df437cb78d97cbf95ef26b';
-  const REDIRECT_URI = "http://localhost:3000";
+  // const REDIRECT_URI = "http://localhost:3000";
+  const REDIRECT_URI = "https://artistchecker.onrender.com"
   const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize';
   const RESPONSE_TYPE = "token"
 
